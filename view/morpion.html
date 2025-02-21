@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeux du Morpion</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Todo : Meta description-->
      <link rel="stylesheet" href="../style/main.css">
      <link rel="stylesheet" href="../style/morpion.css">
 
-     <script src="../script/morpion.js"></script>
+     <script src="../script/morpion.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,8 +25,8 @@
         <!-- Section pour afficher du texte au joueur-->
         <section id="TextArea">
             <p>Ce jeux du Morpion a été construit dans sa version 1 pour étre jouer à 2 joueur</p>
-            <p>Joueur 1 : tu aura la couleur BLEUE et tu utilisera les "O".</p>
-            <p>Joueur 2 : tu aura la couleur ROUGE et tu utilisera les "X".</p>
+            <p id="playeur1">Joueur 1 : tu aura la couleur BLEUE et tu utilisera les "O".</p>
+            <p id="playeur2">Joueur 2 : tu aura la couleur ROUGE et tu utilisera les "X".</p>
         </section>
         <!-- Section pour la zone du jeu du morpion -->
         <section>
@@ -52,7 +54,7 @@
         </section>
          <!-- Section pour le bouton jouer/restart -->
         <section id="buttonArea">
-            <button>Jouer</button>
+            <button onclick="init()">Jouer</button>
         </section>
     </main>
 </body>
