@@ -1,5 +1,8 @@
 
-#TextArea{
+#textArea{
+
+        height: 87px;
+    
     p{
         text-align: center;
         font-size: x-large;
@@ -13,6 +16,10 @@
     #playeur2{
         color: red;
     }
+}
+
+.playeur1{
+    background-color: blue;
 }
 
 #gameBoard{
