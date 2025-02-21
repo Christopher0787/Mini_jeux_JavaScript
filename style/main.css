@@ -12,25 +12,31 @@ header{
     nav{
 
     }
+    div{
+        h1{
+            display: flex;
+            justify-content: center;
+            text-shadow: 4px 4px 4px white;
+            background: linear-gradient(rgb(47, 243, 197), rgb(4, 123, 119));
+        }
+    }
 }
 main{
     display: flex;
     flex-direction: column;
     width: 100%;
    
-    h1{
-        text-shadow: 4px 4px 4px white;
-        background: linear-gradient(rgb(47, 243, 197), rgb(4, 123, 119));
-    }
+
 
     section{
         margin-left: 5px;
         margin-top: 10px;
 
-        a{
-            
-            article{
+        
 
+        article{
+
+            a{
                 h2{
                     font-size: x-large;
                     background-color: rgb(4, 90, 67);
@@ -38,12 +44,13 @@ main{
                     text-decoration: white;
                 }
                 p{
+                    margin-top: 10px;
                     background-color: rgb(4, 90, 67);
                     color: white;
                     text-decoration: white;
                 }
             }
-        }
+        }        
     }
 
 
